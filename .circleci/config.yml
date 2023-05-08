@@ -37,7 +37,7 @@ workflows:
   build_test_analyse:
     jobs:
       - build
-      - test
+      - test:
           requires: 
             - build
       - analyse:
